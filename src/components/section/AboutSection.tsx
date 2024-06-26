@@ -8,13 +8,13 @@ export default function AboutSection() {
         <h2 className=" mb-12 md:mb-20 text-start">About</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="text-xl md:text-4xl">
-            I am Long Quân, also known as Peter. I'm currently studying IT at Macquarie University.{' '}
-            <br />
+            My name is Long Quân, also known as Peter. I am currently studying IT at Macquarie
+            University. <br />
             <br /> I enjoy a variety of things, like web design, development, data science, and
             keeping up with the latest from OpenAI.
             <br />
-            <br /> You'll find me binging on Netflix, scrolling through YouTube, listening to music,
-            strumming my guitar 🎸.
+            <br /> You will find me binging on Netflix, scrolling through YouTube, listening to
+            music, strumming my guitar 🎸.
           </div>
           <div className="relative w-[200px] md:w-[400px] mx-auto md:mx-0 md:ml-auto order-first md:order-last">
             <AspectRatio ratio={4 / 5}>

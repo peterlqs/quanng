@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { ArrowRightIcon } from 'lucide-react'
-import { StickyScroll } from '../ui/sticky-scroll-reveal'
 import { Separator } from '../ui/separator'
 
 export default function ServiceSection() {
@@ -12,7 +11,10 @@ export default function ServiceSection() {
         {/* <div className="flex flex-col gap-8 justify-around"> */}
         <div className="grid grid-cols-1 md:grid-cols-3 py-4">
           {content.map((item, index) => (
-            <div className="flex flex-col gap-16 border-l p-4 justify-between">
+            <div
+              id={index.toString()}
+              className="flex flex-col gap-16 border-l p-4 justify-between"
+            >
               <div className="flex flex-col gap-4">
                 <h3>{item.title}</h3>
                 <div className="text-xl text-slate-200">{item.description}</div>
