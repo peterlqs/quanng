@@ -28,13 +28,17 @@ export default async function ProjectSection() {
               {typeof project.gallery![0].image === 'object' &&
                 (() => {
                   const { image } = project.gallery![0]
-                  const url = image.url || ''
+                  const filename = image.filename as string
+                  // console.log(`${process.env.NEXT_PUBLIC_SERVER_URL}${image.url}`)
+                  const url = `${process.env.NEXT_PUBLIC_SERVER_URL}/media/${filename}`
+                  // const url = image.url || ''
 
                   return (
                     <div className="relative w-full">
                       <AspectRatio ratio={4 / 3}>
                         <Image
                           src={url}
+                          // src="http://localhost:3000/media/blog_datafest.jpg"
                           alt={project.gallery![0].image.alt || project.title}
                           fill={true}
                           sizes="100%"

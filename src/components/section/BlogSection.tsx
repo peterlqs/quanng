@@ -26,7 +26,10 @@ export default async function BlogSection() {
               {typeof blog.image === 'object' &&
                 (() => {
                   const { image } = blog
-                  const url = image.url || ''
+                  const filename = image.filename as string
+                  // console.log(`${process.env.NEXT_PUBLIC_SERVER_URL}${image.url}`)
+                  const url = `${process.env.NEXT_PUBLIC_SERVER_URL}/media/${filename}`
+                  // const url = image.url || ''
 
                   return (
                     <Link href={blog.Link} className="">
