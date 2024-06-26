@@ -30,7 +30,8 @@ export default async function ProjectSection() {
                   const { image } = project.gallery![0]
                   const filename = image.filename as string
                   // console.log(`${process.env.NEXT_PUBLIC_SERVER_URL}${image.url}`)
-                  const url = `${process.env.NEXT_PUBLIC_SERVER_URL}/media/${filename}`
+                  // const url = `${process.env.NEXT_PUBLIC_SERVER_URL}/media/${filename}`
+                  const url = `/media/${filename}`
                   // const url = image.url || ''
 
                   return (
