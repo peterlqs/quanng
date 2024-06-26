@@ -4,6 +4,7 @@ import MediumIcon from 'public/medium_icon'
 import TimeWidget from '../TimeWidget'
 
 export default function Hero() {
+  //d
   return (
     <section>
       <div className="h-screen -z-30"></div>
