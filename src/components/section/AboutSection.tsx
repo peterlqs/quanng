@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function AboutSection() {
   return (
-    <section>
+    <section id="about">
       <div className="padding-global">
         <h2 className=" mb-12 md:mb-20 text-start">About</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

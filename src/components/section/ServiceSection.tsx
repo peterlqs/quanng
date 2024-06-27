@@ -4,7 +4,7 @@ import { Separator } from '../ui/separator'
 
 export default function ServiceSection() {
   return (
-    <section className="rounded-3xl text-primary">
+    <section id="service" className="rounded-3xl text-primary">
       <div className="padding-global">
         <h2 className=" mb-12 md:mb-20 text-start">Services</h2>
         {/* <StickyScroll content={content} /> */}

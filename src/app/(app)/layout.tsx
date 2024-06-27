@@ -5,9 +5,15 @@ import { Inter } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
 import { ThemeProvider } from '@/components/theme-provider'
 import Footer from '@/components/Footer'
+import { Metadata } from 'next'
 
 type RootLayoutProps = {
   children: React.ReactNode
+}
+
+export const metadata: Metadata = {
+  title: 'Quan Ng',
+  description: 'Web Designer & Developer',
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {

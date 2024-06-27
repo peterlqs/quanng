@@ -7,8 +7,8 @@ export default function Hero() {
   //d
   return (
     <section>
-      <div className="h-screen -z-30"></div>
-      <div className="h-screen w-full flex items-center justify-center fixed top-0 z-auto">
+      <div className="min-h-svh -z-30"></div>
+      <div className="min-h-svh w-full flex items-center justify-center fixed top-0 z-auto">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="content-center order-last md:order-first">
             <div className="border rounded-xl">

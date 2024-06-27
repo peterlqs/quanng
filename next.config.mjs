@@ -15,11 +15,11 @@ const nextConfig = {
   //     pathname: '/account123/**',
   //   },],
   // },
-  images: {
-    domains: ['localhost', process.env.NEXT_PUBLIC_SERVER_URL]
-      .filter(Boolean)
-      .map((url) => url.replace(/https?:\/\//, '')),
-  },
+  // images: {
+  //   domains: ['localhost', process.env.NEXT_PUBLIC_SERVER_URL]
+  //     .filter(Boolean)
+  //     .map((url) => url.replace(/https?:\/\//, '')),
+  // },
 }
 
 export default withPayload(nextConfig)

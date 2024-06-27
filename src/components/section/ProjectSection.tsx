@@ -6,6 +6,7 @@ import { Badge } from '../Badge'
 import { Button } from '../ui/button'
 import { AspectRatio } from '@/components/ui/aspect-ratio'
 import { LinkIcon } from 'lucide-react'
+import Link from 'next/link'
 
 export default async function ProjectSection() {
   const payload = await getPayloadHMR({ config })
@@ -14,7 +15,7 @@ export default async function ProjectSection() {
   })
 
   return (
-    <section>
+    <section id="project">
       <div className="padding-global">
         <h2 className="mb-12 md:mb-20 text-start">Selected Work</h2>
         {/* Projects */}
@@ -54,11 +55,12 @@ export default async function ProjectSection() {
               <div className="flex flex-col">
                 <div className="flex justify-between">
                   <h3 className="mb-2">{project.title}</h3>
-                  <a href={project.link} target="_blank">
+                  <Link href={project.link} target="_blank">
                     <Button variant={'outline'} size={'icon'}>
                       <LinkIcon className="h-4 w-4" />
+                      <span className="sr-only">Link to the project website</span>
                     </Button>
-                  </a>
+                  </Link>
                 </div>
                 <p className="text-xl mt-4 mb-4 max-w-xl">{project.shortDescription}</p>
                 <div className="flex flex-row gap-2 flex-wrap mt-4 mb-8">
