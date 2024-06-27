@@ -56,7 +56,7 @@ export default async function ProjectSection() {
                 <div className="flex justify-between">
                   <h3 className="mb-2">{project.title}</h3>
                   <Link href={project.link} target="_blank">
-                    <Button variant={'outline'} size={'icon'}>
+                    <Button variant={'outline'} size={'default'}>
                       <LinkIcon className="h-4 w-4" />
                       <span className="sr-only">Link to the project website</span>
                     </Button>

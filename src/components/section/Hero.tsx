@@ -20,18 +20,36 @@ export default function Hero() {
                 className="rounded-xl dark:invert opacity-90 mx-auto"
               />
             </div>
-            <div className="w-fit mx-auto flex gap-2 items-center border rounded-lg mt-4 px-4 py-2">
+            <div className="w-fit mx-auto flex gap-2 items-center border rounded-lg mt-8 px-4 py-2">
               {/* LinkedIn */}
-              <a href="https://www.linkedin.com/in/quann" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/quann"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
                 <LinkedinIcon className="h-6 w-6" />
+                <span className="sr-only">LinkedIn</span>
               </a>
               {/* Twitter */}
-              <a href="https://twitter.com/quann" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/quann"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter/X"
+              >
                 <Twitter className="h-6 w-6" />
+                <span className="sr-only">Twitter/X</span>
               </a>
               {/* Medium */}
-              <a href="https://medium.com/@quann" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://medium.com/@quann"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Medium"
+              >
                 <MediumIcon />
+                <span className="sr-only">Medium</span>
               </a>
             </div>
           </div>
