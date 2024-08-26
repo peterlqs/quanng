@@ -17,7 +17,7 @@ export default function Hero() {
                 alt="Hero"
                 width={250}
                 height={550}
-                className="rounded-xl dark:invert opacity-90 mx-auto"
+                className="rounded-xl dark:invert opacity-90 mx-auto object-cover bottom sm:h-auto h-44"
               />
             </div>
             <div className="w-fit mx-auto flex gap-2 items-center border rounded-lg mt-8 px-4 py-2">
@@ -54,14 +54,14 @@ export default function Hero() {
             </div>
           </div>
           <h1 className="flex flex-col gap-6">
-            <span className="text-2xl md:text-4xl ">👋 I am Quan</span>
+            <span className="text-2xl md:text-4xl">👋 I am Quan</span>
             <span className="text-6xl md:text-9xl font-bold">
               Designer &<br /> Developer
             </span>
             <p className="text-2xl md:text-4xl self-end">based in Sydney</p>
           </h1>
         </div>
-        <div className="dark:text-slate-200 text-slate-800 text-sm">
+        <div className="dark:text-slate-200 text-slate-800 text-sm opacity-0 md:opacity-100">
           <div className="absolute right-0 bottom-0 text-end p-4">
             {' '}
             {/* Sydney Coordinate */}
