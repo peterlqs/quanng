@@ -13,11 +13,11 @@ export default function Hero() {
           <div className="content-center order-last md:order-first">
             <div className="border rounded-xl">
               <Image
-                src="/notion_pfp.png"
+                src="/lowerres.png"
                 alt="Hero"
                 width={250}
                 height={550}
-                className="rounded-xl dark:invert opacity-90 mx-auto object-cover bottom sm:h-auto h-44"
+                className="rounded-xl grayscale contrast-125 hover:grayscale-0 hover:contrast-100 transition duration-300 ease-in-out scale-x-[-1]  opacity-90 mx-auto object-cover bottom sm:h-auto h-44"
               />
             </div>
             <div className="w-fit mx-auto flex gap-2 items-center border rounded-lg mt-8 px-4 py-2">
@@ -54,7 +54,7 @@ export default function Hero() {
             </div>
           </div>
           <h1 className="flex flex-col gap-6">
-            <span className="text-2xl md:text-4xl">👋 I am Quan</span>
+            <span className="text-2xl md:text-4xl">Hi, I am Quan</span>
             <span className="text-6xl md:text-9xl font-bold">
               Designer &<br /> Developer
             </span>
