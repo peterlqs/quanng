@@ -6,6 +6,7 @@ import { Navbar } from '@/components/Navbar'
 import { ThemeProvider } from '@/components/theme-provider'
 import Footer from '@/components/Footer'
 import { Metadata } from 'next'
+import { TooltipProvider } from '@/components/ui/tooltip'
 
 type RootLayoutProps = {
   children: React.ReactNode
@@ -28,10 +29,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
             // enableSystem
             disableTransitionOnChange
           >
-            <Navbar />
-
-            {children}
-            <Footer />
+            <TooltipProvider delayDuration={0}>
+              {children}
+              <Navbar />
+              {/* <Footer /> */}
+            </TooltipProvider>
           </ThemeProvider>
         </body>
       </html>

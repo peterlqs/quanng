@@ -30,7 +30,7 @@ export default async function Page() {
             <ProjectSection />
             <ServiceSection />
             <BlogSection />
-            <AboutSection />
+            {/* <AboutSection /> */}
           </div>
           <ContactSection />
         </div>
